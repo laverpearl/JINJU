@@ -4,10 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+=======
+import android.widget.LinearLayout;
+>>>>>>> 36446bdd2aef3b7e31b715fa679440ef1f9b0ab7
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         baseLayout.setBackgroundColor(Color.rgb(0,255,0));
         setContentView(baseLayout,params);
 
+<<<<<<< HEAD
 //버튼까지 추가
         Button btn = new Button(this);
         btn.setText("버튼입니다.");
@@ -39,5 +44,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         
+=======
+>>>>>>> 36446bdd2aef3b7e31b715fa679440ef1f9b0ab7
     }
 }
