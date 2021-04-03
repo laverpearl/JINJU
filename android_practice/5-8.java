@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         baseLayout.setBackgroundColor(Color.rgb(0,255,0));
         setContentView(baseLayout,params);
 
-
+//버튼까지 추가
         Button btn = new Button(this);
         btn.setText("버튼입니다.");
         btn.setBackgroundColor(android.R.color.black);
