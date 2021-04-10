@@ -3,9 +3,16 @@ using namespace std;
 
 int main() 
 {
-int a(a>0);
-int b(b<10);
+double a,b;
 
-cin >> a >> b;
-cout << a/b << '\n';
+while(1) {
+    cin>>a>>b;
+    if(a>0 && b<10 && b!=0)
+        break;
+    else
+        continue;
+}
+
+cout.precision(15);
+cout<<a/b;
 }
