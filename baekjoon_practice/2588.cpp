@@ -15,6 +15,6 @@ int main()
     cout<<a*e<<'\n';
     cout<<a*d<<'\n';
     cout<<a*c<<'\n';
-    cout<<a*b;
-    
+    cout<<a*e+a*d*10+a*c*100;
+
 }
