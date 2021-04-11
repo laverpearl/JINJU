@@ -2,38 +2,57 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "cppbuild",
-            "label": "C/C++: clang 활성 파일 빌드",
-            "command": "/usr/bin/clang",
+            "type": "shell",
+            "label": "C bulid for clang",
+            "command": "clang",
             "args": [
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.out",
-                // 1. execute .out file 첫번째 주석 해제하면 빌드 후 생성된 .out파일 바로 실행 가능
-                /* "&&", //to join building and running of the file "${fileDirname}/${fileBasenameNoExtension}.out",
-                */
-
-                //2. file input 첫번째 주석을 해제한 상테에서 두번째 주석을 해제하면 stdin 대신 파일 입력 사용 가능
-                /* 
-                "<",
-                "${fileDirname}/sample_input.txt"
-                */
-                //3. file output 첫번째 주석을 해제한 상태에서 세번째 주석을 해제하면 stdout대신 파일 출력 사용 가능
-                /*
-                ">",
-                "${fileDirname}/sample_output.txt"
-                */
-            
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "options": {
-                "cwd": "${workspaceFolder}"
+                "cwd": "${workspaceRoot}"
             },
-            "problemMatcher": [
-                "$gcc"
+            "presentation": {
+                "clear": true
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "type": "shell",
+            "label": "C++ bulid for clang++",
+            "command": "clang++",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
-            "group": "build",
-            "detail": "컴파일러: /usr/bin/clang"
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "presentation": {
+                "clear": true
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "type": "shell",
+            "label": "execute",
+            "command": "${fileDirname}/${fileBasenameNoExtension}",
+            "group": "test",
+            "presentation": {
+                "clear": true
+            }
         }
     ]
 }
