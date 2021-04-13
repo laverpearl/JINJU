@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--꼭 필요한 파일, 사이드바(모든 페이지에 공통으로 들어가는것)는 따로 html파일 만들어서 페이지마다 가져다 쓰는 형식으로 한다! -->
+<!--파일 나눠서 저장하기 (기능별)/ html, css, javascript 파일 따로 어떻게??-->
+
+
 <html lang="en">
     <!-- <br>이건 강제 줄바꿈, <p>에서 띄어쓰기 해도 붙여서 나옴 / 따로따로 쓰거나 <br>쓴다 -->
     <!--head는 html문서에 대한 정보를 나타내는부분, 하나만 존재하고 html밑에 있어야함 -->
@@ -19,11 +23,14 @@
 
 
 
+
+
     <!--body도 하나만 존재해야하고, 실제 화면으로 보여지는 것들 -->
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
 <!--이름 바꿔 보기-->
-            <a class="navbar-brand" href="index.html">ImageChatch</a>
+<!-- a href 안의 주소를 index 복사본 으로 했는데 왜 안될까 ????-->
+            <a class="navbar-brand" href="index 복사본.html">ImageChatch</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
 
@@ -63,12 +70,13 @@
                         
 <!--사이드바 중간에 필요없는거 지우려고 했으나 안지워졌다,,, 동작을 누르면 다시 원상복구됩! 이미지유사도 평균가 게시판 가이드 만들었음 -->
 
-                            <a class="nav-link" href="charts.html">
+                            <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 이미지유사도
+                                <!---->
                             </a>
-                            <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon"><i class="fas fa-area"></i></div>
                                 평균가
                             </a>
                             <a class="nav-link" href="#">
