@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             voteCount[i] = 0;
 
         ImageView image[] = new ImageView[9];
-        Integer imageId[] = { R.id.iv1, R.id.iv2, R.id.iv3, R.id.iv4, R.id.iv5, R.id.iv6, R.id.iv7, R.id.iv8, R.id.iv9};
+        Integer imageId[] = { R.id.tv1, R.id.tv2, R.id.tv3, R.id.tv4, R.id.tv5, R.id.tv6, R.id.tv7, R.id.tv8, R.id.tv9};
         final String imgName[] = {"대창덮밥", "쵸코케이크", "딸기치즈", "돈카츠", "마제소바", "해산물파스타", "연어유부초밥", "키토롤", "된장샤브"};
 
         for (int i = 0; i < imageId.length; i++) {
